@@ -15,13 +15,13 @@ class Basepage():
 
 
     def get_element_text(self,By_locater):
-        element = WebDriverWait(self.driver,10).until(EC.visibility_of_element_located(By_locater))
-        return element.text()
+        element = WebDriverWait(self.driver,10).until(EC.visibility_of_element_located(By_locater)).text
+        return element
 
     def is_visible(self,By_locater):
         element = WebDriverWait(self.driver,10)
         element.until(EC.visibility_of_element_located(By_locater))
-       # return bool(element)
+        return bool(element)
 
     def select_the_element(self,By_locater):
         WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(By_locater)).click()

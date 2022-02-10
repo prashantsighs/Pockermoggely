@@ -1,0 +1,6 @@
+"pytest -v test_login.py -k 'test_the_download_plateform' --html=Report.html"
+
+{
+  "user_name": "Player001",
+  "password": "111111"
+}
